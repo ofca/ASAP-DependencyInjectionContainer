@@ -1,6 +1,6 @@
 <?php
 
-use \Ana\DependencyInjectionContainer;
+use \ASAP\DependencyInjectionContainer;
 
 class DependencyInjectionContainerTest extends PHPUnit_Framework_TestCase
 {
@@ -18,7 +18,7 @@ class DependencyInjectionContainerTest extends PHPUnit_Framework_TestCase
         $c
             ->setParam('config', '001')
             ->register('cnt', array(
-                'class' => '\Ana\DependencyInjectionContainer'
+                'class' => '\ASAP\DependencyInjectionContainer'
             ))
             ->register('foo', array(
                 'class' => 'Foo',
